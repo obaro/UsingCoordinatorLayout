@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sample.foo.usingcoordinatorlayout.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/fabAndSnackbarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fab_and_snackbar"/>
+
+        <Button
+            android:id="@+id/fabAndTwoWidgetsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fabAndSnackbarButton"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fab_two_widgets"/>
+
+        <Button
+            android:id="@+id/collapseToolbarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fabAndTwoWidgetsButton"
+            android:layout_centerHorizontal="true"
+            android:text="@string/collapsing_toolbar"/>
+
+        <Button
+            android:id="@+id/customBehaviorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collapseToolbarButton"
+            android:layout_centerHorizontal="true"
+            android:text="@string/custom_behavior"/>
+    </RelativeLayout>
+
+</RelativeLayout>
